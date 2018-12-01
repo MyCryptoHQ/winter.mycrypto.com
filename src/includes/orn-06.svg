@@ -1,0 +1,13 @@
+<svg class="orn" id="orn-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.66 341.48">
+<title>orn</title>
+<line x1="34.4" y1="231.9" x2="34.4" y2="231.78" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
+<line x1="34.4" y1="229.78" x2="34.4" y2="1.13" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0.2501636743545532,2.001309394836426" />
+<line x1="34.4" y1="0.13" x2="34.4" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
+<polygon points="34.33 230.54 34.33 306.94 68.66 286.83 34.33 230.54" style="fill:#a0ba3f" />
+<polygon points="34.33 230.54 34.33 306.94 0 286.83 34.33 230.54" style="fill:#bcd556" />
+<polygon points="34.33 313.41 34.33 341.48 68.66 293.3 34.33 313.41" style="fill:#859a3b" />
+<polygon points="34.33 313.41 34.33 341.48 0 293.3 34.33 313.41" style="fill:#6c7d35" />
+<polygon points="0 286.83 34.33 271.3 34.33 306.94 0 286.83" style="fill:#859a3b" />
+<polygon points="68.66 286.83 34.33 271.3 34.33 306.94 68.66 286.83" style="fill:#6c7d35" />
+<polygon points="55.52 304.8 53.59 309.81 49.33 311.41 53.59 313.06 55.89 318.13 58.16 313.06 62.46 311.41 58.16 309.81 55.52 304.8" style="fill:#d9d98d;mix-blend-mode:hard-light" />
+</svg>

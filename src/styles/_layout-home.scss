@@ -1,0 +1,334 @@
+body {
+  background-color: $home__bg;
+  font-family: $font-primary;
+  color: white;
+  font-size: 16px;
+  @media screen and (max-width: 600px) {
+    padding: 1em;
+  }
+  &.modal-open {
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+  }
+}
+
+@keyframes fadeDots {
+    0%    { opacity: .1  }
+    100%  { opacity: 1;   }
+}
+
+.home-dots {
+  background-size: cover;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation-name: fadeDots;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+.home-dots--1 {
+  background-image: url('../images/home-dots--1.svg');
+  animation-duration: 4s;
+}
+.home-dots--2 {
+  background-image: url('../images/home-dots--2.svg');
+  animation-duration: 4s;
+  animation-delay: 2s;
+}
+.home-dots--3 {
+  background-image: url('../images/home-dots--3.svg');
+  animation-duration: 4s;
+  animation-delay: 4s;
+}
+
+.home-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+.home-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+}
+
+@keyframes moveUp1 {
+    0%    { transform: translate(0, 0); }
+    100%  { transform: translate(0, -1vh); }
+}
+
+@keyframes moveUp2 {
+    0%    { transform: translate(0, 0); }
+    100%  { transform: translate(0, -2vh); }
+}
+
+@keyframes moveUp3 {
+    0%    { transform: translate(0, 0); }
+    100%  { transform: translate(0, -3vh); }
+}
+
+.orn {
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  position: absolute;
+  top: 0;
+}
+
+#orn-1 {
+  animation-name: moveUp1;
+  animation-duration: 4s;
+  width: 3%;
+  left: 1%;
+  @media screen and (max-width: 600px) {
+    width: 7%;
+    left: 1%;
+  }
+}
+#orn-2 {
+  animation-name: moveUp2;
+  animation-duration: 6s;
+  width: 5%;
+  left: 5%;
+  @media screen and (max-width: 600px) {
+    width: 20%;
+    left: 6%;
+    opacity: .75;
+  }
+}
+#orn-3 {
+  animation-name: moveUp3;
+  animation-duration: 3s;
+  width: 6.5%;
+  left: 11%;
+  @media screen and (max-width: 600px) {
+    width: 6%;
+    left: 11%;
+  }
+}
+#orn-4 {
+  animation-name: moveUp3;
+  animation-duration: 4s;
+  width: 1.5%;
+  left: 20%;
+  @media screen and (max-width: 600px) {
+    width: 1.5%;
+    left: 24%;
+  }
+}
+#orn-5 {
+  animation-name: moveUp1;
+  animation-duration: 6s;
+  width: 3.25%;
+  left: 23%;
+  @media screen and (max-width: 600px) {
+    width: 6%;
+    left: 32%;
+  }
+}
+#orn-6 {
+  animation-name: moveUp2;
+  animation-duration: 3s;
+  width: 5%;
+  left: 26%;
+  @media screen and (max-width: 600px) {
+    width: 10%;
+    left: 40%;
+  }
+}
+#orn-7 {
+  animation-name: moveUp1;
+  animation-duration: 4s;
+  width: 3%;
+  left: 31%;
+  @media screen and (max-width: 600px) {
+    width: 6%;
+    right: 40%;
+  }
+}
+#orn-8 {
+  animation-name: moveUp3;
+  animation-duration: 6s;
+  width: 3%;
+  right: 19%;
+  @media screen and (max-width: 600px) {
+    width: 18%;
+    right: 34%;
+  }
+}
+#orn-9 {
+  animation-name: moveUp1;
+  animation-duration: 3s;
+  width: 6%;
+  right: 13%;
+  @media screen and (max-width: 600px) {
+    width: 9%;
+    right: 28%;
+  }
+}
+#orn-10 {
+  animation-name: moveUp2;
+  animation-duration: 4s;
+  width: 6%;
+  right: 7%;
+  @media screen and (max-width: 600px) {
+    width: 7%;
+    right: 16%;
+  }
+}
+#orn-11 {
+  animation-name: moveUp1;
+  animation-duration: 6s;
+  width: 5%;
+  right: 3%;
+  @media screen and (max-width: 600px) {
+    width: 16%;
+    right: 6%;
+  }
+}
+#orn-12 {
+  animation-name: moveUp3;
+  animation-duration: 3s;
+  width: 1.5%;
+  right: 1%;
+  @media screen and (max-width: 600px) {
+    width: 3%;
+    right: 1%;
+  }
+}
+
+
+
+
+.home__main {
+  display: flex;
+  @media screen and (max-width: 920px) {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+.home__aside {
+  min-width: 21em;
+  max-width: 21em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  @media screen and (max-width: 920px) {
+    flex-direction: row;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+  @media screen and (min-width: 1445px) {
+    font-size: 1.3em;
+    min-width: 26em;
+    max-width: 26em;
+    margin-left: 5em;
+  }
+}
+
+.home__calendar {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  @media screen and (max-width: 920px) {
+    height: 87vh;
+    margin-bottom: 2em;
+  }
+  @media screen and (max-width: 600px) {
+    height: 60vh;
+  }
+}
+
+.home__aside--top {
+  background: $box-bg;
+  border: 3px solid white;
+  padding: 1.5em 1em 0;
+  font-size: .95em;
+  margin: 1em;
+  position: relative;
+  a {
+    color: white;
+    text-decoration: underline;
+    transition: color 200ms ease;
+    cursor: pointer;
+    &:hover {
+      color: $day__title-color;
+      transition: color 200ms ease;
+    }
+  }
+  .home-top__bow {
+    position: absolute;
+    width: 4em;
+    z-index: 2;
+    top: -1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  @media screen and (max-width: 920px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+
+
+.home__aside--bottom {
+  background: $box-bg;
+  border: 3px solid white;
+  padding: 1em 0 0;
+  text-align: center;
+  z-index: 1;
+  margin: 1em;
+  position: relative;
+
+  .home-bottom__bow {
+    position: absolute;
+    width: 4em;
+    z-index: 2;
+    top: -1em;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .home-bottom__title {
+    font-size: 1.3em;
+    font-family: $font-title;
+    letter-spacing: 0.05em;
+  }
+
+  .home-bottom__logo {
+    padding: 0.5em;
+    margin: .5em 0;
+    @media screen and (min-width: 1445px) {
+      padding: .2em;
+      margin: .7em;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+#title-top-1 {
+  cursor: pointer;
+}

@@ -1,0 +1,152 @@
+.day__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: rgba( black, 0.75 );
+}
+
+.day__modal {
+  opacity: 1;
+  width: 880px;
+  height: 640px;
+  background-color: $day__modal-bg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  max-height: 100vh;
+  a {
+    color: white;
+    text-decoration: underline;
+    transition: color 200ms ease;
+    cursor: pointer;
+    &:hover {
+      color: $day__title-color;
+      transition: color 200ms ease;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    width: 100%;
+    min-height: 100vh;
+  }
+}
+
+.day__content {
+  max-width: 640px;
+  padding: 5%;
+  @media screen and (max-width: 600px) {
+    max-width: 640px;
+  }
+}
+
+.day__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  line-height: 1;
+}
+
+
+
+.day__date {
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 1.5em;
+  font-size: .9em;
+}
+
+.day__title {
+  font-family: $font-title;
+  color: $day__title-color;
+  font-size: 3.1em;
+  width: 100%;
+  text-align: center;
+  letter-spacing: .03em;
+  line-height: 1;
+}
+
+.day__desc {
+  line-height: 1.45;
+  li {
+    margin-bottom: .25em;
+  }
+}
+
+.day__share {
+  display: block;
+  float: left;
+  @media screen and (max-width: 600px) {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.day__twitter-link {
+  float: left;
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    text-align:center;
+    margin-bottom: 1em;
+  }
+  img {
+    transition: opacity 200ms ease;
+    width: 170px;
+  }
+  &:hover img {
+    opacity: .9;
+    transition: opacity 200ms ease;
+  }
+  &:active img {
+    opacity: 1;
+    transition: opacity 200ms ease;
+  }
+}
+
+a.company__section {
+  display: flex;
+  float: right;
+  text-align: right;
+  align-items: center;
+  text-decoration: none;
+  @media screen and (max-width: 600px) {
+    float: none;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.company__text {
+  font-weight: 200;
+  font-style: italic;
+  letter-spacing: .1em;
+  line-height: 1.2;
+  font-size: .9em;
+  display: inline-block;
+  margin: 0 1em;
+}
+
+.company__logo {
+  float: right;
+  display: inline-block;
+}
+
+.company__img {
+
+}

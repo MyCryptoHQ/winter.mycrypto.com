@@ -1,0 +1,9 @@
+<svg class="orn" id="orn-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.98 571.1">
+  <title>orn</title>
+  <g style="opacity:0.25">
+    <line x1="12.49" y1="471.28" x2="12.49" y2="471.16" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
+    <line x1="12.49" y1="469.15" x2="12.49" y2="1.13" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0.25054851174354553,2.0043880939483643" />
+    <line x1="12.49" y1="0.13" x2="12.49" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
+  </g>
+  <path d="M12.49,571.1c0-.64,0-1.28.1-1.92,1.25-17.56,9.45-33.61,11.68-51.07,2.1-16.5,0-34.17-11.78-46.83C.74,483.94-1.38,501.61.72,518.11c2.22,17.46,10.42,33.51,11.68,51.07C12.44,569.82,12.48,570.46,12.49,571.1Z" style="fill:#cdeae8" />
+</svg>

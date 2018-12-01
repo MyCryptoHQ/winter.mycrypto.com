@@ -1,0 +1,13 @@
+<svg class="orn" id="orn-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 101.89 309.82">
+  <title>orn</title>
+  <line x1="50.95" y1="145.29" x2="50.95" y2="145.16" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
+  <line x1="50.95" y1="143.18" x2="50.95" y2="1.12" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0.24835392832756042,1.9868314266204834" />
+  <line x1="50.95" y1="0.13" x2="50.95" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
+  <polygon points="50.94 145.2 50.94 258.57 101.89 228.73 50.94 145.2" style="fill:#66bd96" />
+  <polygon points="50.94 145.2 50.94 258.57 0 228.73 50.94 145.2" style="fill:#a5d1be" />
+  <polygon points="50.94 268.18 50.94 309.82 101.89 238.33 50.94 268.18" style="fill:#569d7c" />
+  <polygon points="50.94 268.18 50.94 309.82 0 238.33 50.94 268.18" style="fill:#517d71" />
+  <polygon points="0 228.73 50.94 205.68 50.94 258.57 0 228.73" style="fill:#569d7c" />
+  <polygon points="101.89 228.73 50.94 205.68 50.94 258.57 101.89 228.73" style="fill:#517d71" />
+  <polygon points="91.35 201.89 88.41 209.69 81.93 212.17 88.41 214.74 91.91 222.63 95.36 214.74 101.89 212.17 95.36 209.69 91.35 201.89" style="fill:#d9d98d;mix-blend-mode:hard-light" />
+</svg>
