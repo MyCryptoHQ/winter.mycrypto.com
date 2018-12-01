@@ -231,7 +231,7 @@ body {
   @media screen and (max-width: 600px) {
     flex-direction: column;
   }
-  @media screen and (min-width: 1445px) {
+  @media screen and (min-width: 1681px) {
     font-size: 1.3em;
     min-width: 26em;
     max-width: 26em;
@@ -315,7 +315,7 @@ body {
   .home-bottom__logo {
     padding: 0.5em;
     margin: .5em 0;
-    @media screen and (min-width: 1445px) {
+    @media screen and (min-width: 1681px) {
       padding: .2em;
       margin: .7em;
     }
