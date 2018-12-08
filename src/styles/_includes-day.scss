@@ -78,6 +78,16 @@
   text-align: center;
   letter-spacing: .03em;
   line-height: 1;
+  a {
+    color: $day__title-color;
+    text-decoration: underline;
+    transition: color 200ms ease;
+    cursor: pointer;
+    &:hover {
+      color: white;
+      transition: color 200ms ease;
+    }
+  }
 }
 
 .day__desc {
