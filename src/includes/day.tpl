@@ -8,7 +8,9 @@
 
     <div class="day__content">
 
-      <date class="day__date">@@date</date>
+      @@if ( date != "" ) {
+        <date class="day__date">@@date</date>
+      }
 
       <h2 class="day__title">@@title</h2>
 
