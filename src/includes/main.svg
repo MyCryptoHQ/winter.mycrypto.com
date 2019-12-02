@@ -514,7 +514,7 @@
       <polygon points="383.29 257.12 381.35 254.2 379.42 247.75 377.5 254.2 375.55 257.12 371.68 259.4 375.55 261.91 377.5 264.49 379.42 271.04 381.35 264.49 383.29 261.91 387.15 259.4 383.29 257.12" style="fill:#d9d98d" />
     </g>
   </g>
-  <g class="peel__item" id="peel-away">
+  <g id="peel-away">
     <g class="peel__item" id="peel-1">
       <path id="Shadow" d="M355.58,283.13l96.61,90s57.39-67,71.11-78S355.58,283.13,355.58,283.13Z" transform="translate(-11.97 -17.96)" style="fill:#064751" />
       <g id="Previous_Day_-_Top_Peel" data-name="Previous Day - Top Peel">
