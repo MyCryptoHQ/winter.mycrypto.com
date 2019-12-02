@@ -12,7 +12,7 @@ var plumber      = require('gulp-plumber' )
 var rename       = require('gulp-rename')
 var uglify       = require('gulp-uglify')
 var sourcemaps   = require('gulp-sourcemaps')
-sass.compiler = require('node-sass');
+sass.compiler    = require('node-sass');
 
 
 var src          = './src/'
@@ -60,7 +60,7 @@ gulp.task('styles', function() {
   return gulp.src( style_srcFile )
 
     .pipe(         sass().on('error', sass.logError))
-    .pipe( autoprefixer({     browsers: ['last 4 versions', 'iOS > 7'], remove: false }) )
+    .pipe( autoprefixer({     browsers: ['last 4 versions'], remove: false }) )
     .pipe(      cssnano({ autoprefixer: false, safe: true                             }) )
     .pipe(       rename(                style_distFile                                )  )
     .pipe(sourcemaps.write())

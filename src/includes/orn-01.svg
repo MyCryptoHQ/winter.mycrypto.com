@@ -1,9 +1,0 @@
-<svg class="orn" id="orn-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52.49 431.79">
-  <title>orn</title>
-  <g style="opacity:0.25">
-    <line x1="26.25" y1="384.86" x2="26.25" y2="384.73" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
-    <line x1="26.25" y1="382.73" x2="26.25" y2="1.13" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10;stroke-dasharray:0.2500709295272827,2.0005674362182617" />
-    <line x1="26.25" y1="0.13" x2="26.25" style="fill:none;stroke:#f1f1f2;stroke-linecap:round;stroke-miterlimit:10" />
-  </g>
-  <path d="M26.25,384.86a12.06,12.06,0,0,0,3.92,4c3.44,2.44,7.25,3.57,11.1,5.16,5.85,2.42,11.43,7.5,11.22,14.32.21,6.82-5.37,11.9-11.22,14.31-3.85,1.59-7.66,2.72-11.1,5.16a12.15,12.15,0,0,0-3.92,4,12.09,12.09,0,0,0-3.93-4c-3.44-2.44-7.25-3.57-11.09-5.16C5.37,420.23-.2,415.15,0,408.33c-.21-6.82,5.36-11.9,11.22-14.32,3.84-1.59,7.65-2.72,11.09-5.16A12,12,0,0,0,26.25,384.86Z" style="fill:#d9d98d" />
-</svg>
