@@ -42,7 +42,7 @@
     background-image: url(../images/popup-left-desktop.svg);
     background-position: 0 100%;
     height: 100%;
-    left: -5vh;
+    left: -9vh;
     background-repeat: no-repeat;
     background-size: contain;
     content: '';
@@ -173,6 +173,7 @@
 
 a.company__section {
   display: flex;
+  margin-top: 1em;
   float: right;
   text-align: right;
   align-items: center;
