@@ -31,7 +31,7 @@
             This tip brought<br /> to you by @@company_name!
           </p>
           <div class="company__logo">
-            <img class="company__img" src="images/@@company_img" height="50" width="auto" />
+            <img class="company__img" src="images/@@company_img" height="30" width="auto" />
           </div>
         </a>
       }
