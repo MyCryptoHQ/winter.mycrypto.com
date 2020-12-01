@@ -68,7 +68,8 @@ Zepto(function($){
     }
   });
 
-  if ( $(window).height() < 600 ) {
+  if ( $(window).height() < $( '.day__content' ).height ) {
+    alert('balh')
     $( '.day__content' ).css({
       'max-height': '100vh',
       'overflow': 'scroll'
@@ -81,13 +82,13 @@ Zepto(function($){
 
 function openModal( day ) {
   $( '#modal-' + day ).css('display', 'flex')
-  $( 'body' ).addClass( 'modal-open')
+  //$( 'body' ).addClass( 'modal-open')
   window.location.hash = "#" + day
 }
 
 function closeModal( ) {
   $( '.day__wrapper' ).css('display', 'none')
-  $( 'body' ).removeClass( 'modal-open')
+  //$( 'body' ).removeClass( 'modal-open')
   window.location.hash = ""
 }
 

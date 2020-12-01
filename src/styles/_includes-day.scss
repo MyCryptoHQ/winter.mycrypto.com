@@ -1,37 +1,36 @@
 .day__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  background-color: rgba(#1699C9, 0.8);
   display: none;
-  top: 0;
+  min-height: 100%;
+  overflow: scroll;
+  padding: 5vh 10vw;
+  position: absolute;
+  position: absolute;
   right: 0;
-  left: 0;
-  bottom: 0;
+  top: 0;
+  width: 100vw;
+  width: 100vw;
   z-index: 100;
-  background-color: rgba(black, 0.75);
 }
 
 .day__modal {
   opacity: 1;
-  width: 70%;
-  background-color: $day__modal-bg;
+  background-color: #163150;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   position: relative;
-  max-height: 100vh;
+  padding: 8vh 5vw;
   a {
     color: white;
+    font-weight: 500;
     text-decoration: underline;
-    transition: color 200ms ease;
+    transition: color 100ms ease;
     cursor: pointer;
     &:hover {
       color: $day__title-color;
-      transition: color 200ms ease;
+      transition: color 100ms ease;
     }
   }
   @media screen and (max-width: 800px) {
@@ -42,14 +41,14 @@
     background-image: url(../images/popup-left-desktop.svg);
     background-position: 0 100%;
     height: 100%;
-    left: -9vh;
     background-repeat: no-repeat;
     background-size: contain;
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1000;
-    bottom: -2vh;
-    width: 16vh;
+    bottom: 0;
+    width: 16vw;
+    left: -10vw;
     @media screen and (max-width: 600px) {
       display: none;
     }
@@ -57,15 +56,15 @@
   &:before {
     background-image: url(../images/popup-right-desktop.svg);
     background-position: 100% 100%;
-    width: 30vh;
-    right: -18vh;
-    height: 100%;
-    bottom: -2vh;
     background-repeat: no-repeat;
     background-size: contain;
-    content: '';
+    content: "";
     position: absolute;
     z-index: 1000;
+    width: 10vw;
+    right: -3vw;
+    height: 100%;
+    bottom: -2vw;
     @media screen and (max-width: 600px) {
       display: none;
     }
@@ -74,7 +73,7 @@
 
 .day__content {
   width: 100%;
-  padding: 5vw 10vw;
+  padding: 3vw 5vw;
   @media screen and (max-width: 800px) {
     padding: 7vw 10vw;
     min-height: 100%;
@@ -92,6 +91,19 @@
   padding: 1em;
   line-height: 1;
   z-index: 9999;
+  &:before {
+    background-image: url(../images/popup-top-desktop.svg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 23vw;
+    height: 8vw;
+    right: 0;
+    top: -4vw;
+  }
 }
 
 .day__date {
@@ -101,6 +113,7 @@
   display: block;
   margin-bottom: 1.5em;
   font-size: 0.9em;
+  color: #8CD3F8;
 }
 
 .day__title {
@@ -157,17 +170,17 @@
     margin-bottom: 1em;
   }
   img {
-    transition: opacity 200ms ease;
-    width: 15em;
-    margin: 1em -2.5em;
+    transition: opacity 100ms ease;
+    width: 12em;
+    margin: 1em 0 0;
   }
   &:hover img {
     opacity: 0.9;
-    transition: opacity 200ms ease;
+    transition: opacity 100ms ease;
   }
   &:active img {
     opacity: 1;
-    transition: opacity 200ms ease;
+    transition: opacity 100ms ease;
   }
 }
 
