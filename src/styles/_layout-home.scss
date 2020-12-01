@@ -4,10 +4,16 @@ body {
   background-size: cover;
   font-family: $font-primary;
   color: white;
-  font-size: 17px;
+  font-size: 18px;
   width: 100%;
   overflow-x: hidden;
   background-position: center;
+  @media screen and (max-width: 750px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1300) {
+    font-size: 22px;
+  }
 }
 
 .logo {
@@ -100,13 +106,13 @@ body {
 
 .home__aside--top {
     padding: 1.5em;
-    font-size: .9em;
     margin: 1em;
     position: relative;
     font-weight: 500;
     color: #017896;
     background-image: url(../images/text-background.png);
     background-size: 100% 100%;
+    font-size: .9em;
   a {
     color: #017896;
     text-decoration: underline;

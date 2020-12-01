@@ -27,12 +27,12 @@
   padding: 8vh 5vw;
   a {
     color: white;
-    font-weight: 500;
     text-decoration: underline;
     transition: color 100ms ease;
     cursor: pointer;
+    font-weight: 600;
     &:hover {
-      color: $day__title-color;
+      color: #f66a7c;
       transition: color 100ms ease;
     }
   }
@@ -211,7 +211,6 @@ a.company__section {
   font-style: italic;
   letter-spacing: 0.1em;
   line-height: 1.2;
-  font-size: 0.9em;
   display: inline-block;
   margin: 0 1em;
 }
