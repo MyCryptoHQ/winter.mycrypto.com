@@ -20,6 +20,6 @@
   "devDependencies": {
     "gulp-sass": "^4.0.2",
     "markdown": "^0.5.0",
-    "node-sass": "^4.10.0"
+    "node-sass": "^4.13.1"
   }
 }
