@@ -8,7 +8,8 @@ body {
   width: 100%;
   overflow-x: hidden;
   background-position: center right;
-  @media screen and (max-width: 750px) {
+  position: relative;
+  @media screen and (max-width: 768px) {
     font-size: 16px;
   }
   @media screen and (min-width: 1400px) {
@@ -23,7 +24,7 @@ body {
   display: block;
   max-width: 310px;
   margin-bottom: 1em;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     display: none;
   }
 }
@@ -45,7 +46,7 @@ body {
 .home__main {
   display: flex;
   min-height: 100vh;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column-reverse;
   }
@@ -57,7 +58,7 @@ body {
   width: 70%;
   height: auto;
   max-width: 240px;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     display: block;
   }
 }
@@ -67,11 +68,11 @@ body {
   flex-direction: column;
     justify-content: center;
     align-items: center;
-  @media screen and (min-width: 751px) {
+  @media screen and (min-width: 769px) {
     width: 28%;
     min-width: 28%;
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     display: none;
     &:first-child {
       display: flex;
@@ -83,24 +84,20 @@ body {
   flex: 1;
   position: relative;
   text-align: center;
-  min-height: 600px;
   svg {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    @media screen and (max-width: 750px) {
-      width: 100%;
-      height: auto;
-      margin-top: 2em;
+    @media screen and (min-width: 769px) {
+      min-height: 40em;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     height: auto;
     overflow-x: hidden;
   }
-  @media screen and (min-width: 751px) {
+  @media screen and (min-width: 769px) {
     width: 50%;
-    min-width: 50%;
   }
 }
 
