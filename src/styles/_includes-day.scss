@@ -3,16 +3,16 @@
   display: none;
   min-height: 100%;
   overflow: scroll;
-  padding: 5vh 10vw;
-  position: absolute;
+  padding: 5vh 14vw;
   position: absolute;
   right: 0;
   top: 0;
   width: 100vw;
-  width: 100vw;
   z-index: 100;
-  @media screen and (max-width: 750px) {
+  align-items: center;
+  @media screen and (max-width: 768px) {
     padding: 0;
+    align-items: stretch;
   }
 }
 
@@ -35,7 +35,7 @@
       transition: color 100ms ease;
     }
   }
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     min-height: 100vh;
   }
@@ -51,7 +51,7 @@
     bottom: 0;
     width: 16vw;
     left: -10vw;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -67,7 +67,7 @@
     right: -3vw;
     height: 100%;
     bottom: -2vw;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -75,8 +75,8 @@
 
 .day__content {
   width: 100%;
-  padding: 3vw 5vw;
-  @media screen and (max-width: 750px) {
+  padding: 3vw 6vw;
+  @media screen and (max-width: 768px) {
     padding: 5vh 5vw;
     min-height: 100%;
     z-index: 2000;
@@ -105,7 +105,7 @@
     height: 8vw;
     right: 0;
     top: -4vw;
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 768px) {
       display: none;
     }
   }
@@ -160,7 +160,7 @@
 .day__share {
   display: block;
   float: left;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     float: none;
     width: 100%;
     text-align: center;
@@ -169,7 +169,7 @@
 
 .day__twitter-link {
   float: left;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     width: 100%;
     text-align: center;
     margin-bottom: 1em;
@@ -196,7 +196,7 @@ a.company__section {
   text-align: right;
   align-items: center;
   text-decoration: none;
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 768px) {
     float: none;
     width: 100%;
     text-align: center;

@@ -4,7 +4,7 @@
 
 <p>Welcome to the third annual #MyCryptoWinter event! Throughout the month of December, new tips will be revealed each day with action items to complete. These action items are angled towards improving your online life — from privacy to security and everything in-between.</p>
 
-<p><strong>Want to win prizes?</strong> Share these tips throughout the month on Twitter with the hashtag #MyCryptoWinter to be automatically entered to win one of many prize packs, filled with prizes from our partners.</p>
+<p><strong>Want to win prizes?</strong> Share these tips throughout the month on Twitter with the hashtag <a href="https://twitter.com/search?q=%23MyCryptoWinter&amp;f=live&amp;vertical=default" target="_blank" rel="noopener">#MyCryptoWinter</a> to be automatically entered to win one of many prize packs, filled with prizes from our partners.</p>
 
 <p>MyCrypto Members get 3 extra entries - <a href="https://app.mycrypto.com/membership" target="_blank" rel="noopener">get a membership</a> and redeem your entries!</p>
 
