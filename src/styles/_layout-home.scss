@@ -4,14 +4,14 @@ body {
   background-size: cover;
   font-family: $font-primary;
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   width: 100%;
   overflow-x: hidden;
-  background-position: center;
+  background-position: center right;
   @media screen and (max-width: 750px) {
     font-size: 16px;
   }
-  @media screen and (min-width: 1300) {
+  @media screen and (min-width: 1400px) {
     font-size: 22px;
   }
 }
