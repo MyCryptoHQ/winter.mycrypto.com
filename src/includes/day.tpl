@@ -2,11 +2,25 @@
 
   <div class="day__modal">
 
+      @@if ( company_banner != "" ) {
+          <div class="company_banner">
+            <img src="images/@@company_banner" height="80" width="auto" />
+          </div>
+      }
+
     <a class="day__close">
       <svg width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.75 25.75"><title>icon--close</title><path d="M15.91,12.88l9.21-9.22a2.14,2.14,0,0,0-3-3L12.88,9.84,3.66.63a2.14,2.14,0,0,0-3,3l9.21,9.22L.63,22.09a2.14,2.14,0,1,0,3,3l9.22-9.21,9.21,9.21a2.14,2.14,0,0,0,3-3Z" style="fill:#fff"/></svg>
     </a>
 
     <div class="day__content">
+
+
+      @@if ( company_banner != "" ) {
+          <div class="company_banner_mobile">
+            <img src="images/@@company_banner" height="80" width="auto" />
+          </div>
+      }
+
 
       @@if ( date != "" ) {
         <date class="day__date">@@date</date>
