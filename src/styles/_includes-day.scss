@@ -75,7 +75,7 @@
 
 .day__content {
   width: 100%;
-  padding: 3vw 6vw;
+  padding: 3vw 8vw 4vw;
   @media screen and (max-width: 768px) {
     padding: 5vh 5vw;
     min-height: 100%;
@@ -143,6 +143,7 @@
 
 .day__desc {
   line-height: 1.45;
+  margin-bottom: 2em;
   li {
     margin-bottom: 0.25em;
   }
@@ -219,4 +220,30 @@ a.company__section {
 }
 
 .company__img {
+}
+
+.company_banner {
+  display: none;
+  @media screen and (min-width: 769px) {
+    display: block;
+    position: relative;
+    top: -2em;
+    left: -39%;
+    margin-bottom: -2em;
+    img {
+      height: 5em;
+      width: auto;
+    }
+  }
+}
+
+.company_banner_mobile {
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+        margin-top: -3em;
+    margin-left: -3em;
+    margin-bottom: 2em;
+  }
+
 }
