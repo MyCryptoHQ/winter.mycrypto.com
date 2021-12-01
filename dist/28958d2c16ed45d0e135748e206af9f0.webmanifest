@@ -1,0 +1,20 @@
+{
+    "name": "MyCrypto",
+    "short_name": "MyCrypto",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png?v=2021",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png?v=2021",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#7f26ca",
+    "background_color": "#7f26ca",
+    "start_url": "https://winter.mycrypto.com",
+    "display": "standalone"
+}
