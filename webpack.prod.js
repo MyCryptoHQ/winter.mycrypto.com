@@ -67,20 +67,6 @@ module.exports = {
                 ]
             },
             {
-                // Load all images as base64 encoding if they are smaller than 8192 bytes
-                test: /\.(png|jpg|gif|xml|ico|webmanifest)$/,
-                use: [
-                    {
-                        loader: 'url-loader',
-                        options: {
-                            name: '[name].[hash:20].[ext]',
-                            limit: 8192
-                        }
-                    }
-                ]
-            }
-            ,
-            {
                 // Load all icons
                 test: /\.(eot|woff|woff2|svg|ttf|png|jpg|gif|svg|xml|ico|webmanifest)([\?]?.*)$/,
                 use: [

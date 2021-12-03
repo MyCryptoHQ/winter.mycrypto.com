@@ -1,143 +1,336 @@
 @import 'reboot.scss';
 
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./../fonts/avenir-next-bold.woff2') format('woff2'),
+    url('./../fonts/avenir-next-bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./../fonts/avenir-next-demibold.woff2') format('woff2'),
+    url('./../fonts/avenir-next-demibold.woff') format('woff');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./../fonts/avenir-next-medium.woff2') format('woff2'),
+    url('./../fonts/avenir-next-medium.woff') format('woff');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  src: url('./../fonts/avenir-next-regular.woff2') format('woff2'),
+    url('./../fonts/avenir-next-regular.woff') format('woff');
+  font-weight: normal;
+}
+
+
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./../fonts/mon-400.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./../fonts/mon-500.woff2') format('woff2');
+
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./../fonts/mon-700.woff2') format('woff2');
+}
+
 
 html {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 body {
-    background-image: url('./../assets/background.svg');
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+  background-image: url('./../assets/background.svg');
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  overflow: hidden;
+  @media (max-aspect-ratio: 64/85) {
+    background-image: none;
+  }
+}
+
+.mobile-clip {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  @media (max-aspect-ratio: 64/85) {
+    background: radial-gradient(251.71% 60% at 54.85% -1.1%, #AD00B0 0%, #3700AB 100%);
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+  }
 }
 
 p {
   margin-bottom: .4em;
 }
-#top-left-thing {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: top left;
 
-    @media (orientation: portrait) {
-        transform: scaleY(2)
-    }
+#top-left-thing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+  width: 100%;
+  height: auto;
+  @media (max-aspect-ratio: 64/85) {
+    display:none;
+  }  
 }
 
 #top-right-thing {
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform-origin: top right;
-
-    @media (orientation: portrait) {
-        transform: scaleY(2)
-    }
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform-origin: top right;
+  width: 100%;
+  height: auto;
+  @media (max-aspect-ratio: 64/85) {
+    display:none;
+  }  
 }
 
 #main-ignore-bg {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  @media (max-aspect-ratio: 64/85) {
+    display:none;
+  }
 }
 
 #main-planet-container {
     position: absolute;
-    left: 50%;
-    top: 40%;
-    transform: translate(-50%, -50%);
-    width: 45%;
+    top: 18vh;
     height: auto;
+    max-height: 100%;
+    left: 23vw;
+    width: 54vw;
+  @media (min-aspect-ratio: 81/64) {
+    top: 14vh;
+    left: 25vw;
+    width: 50vw;
+  }
+  @media (min-aspect-ratio: 2/1) {
+    top: 0;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    width: 110vw;
+    height: auto;
+    position: static;
+    margin: 2em 0 2em -1em;
+  }
 }
 
 #main-seat-left {
-    position: absolute;
-    bottom: 0;
-    left: 14%;
-    width: 22%;
+  position: absolute;
+  bottom: 0;
+  left: 1vw;
+  width: auto;
+  height: 22vh;
+  transform-origin: center left;
+  pointer-events: none;
+  @media (min-aspect-ratio: 81/64) {
+    left: 14vw;
+    width: 21vw;
     height: auto;
-    transform-origin: center left;
-    pointer-events: none;
-
+    bottom: -3vw;
+  }
+  @media (min-aspect-ratio: 2/1) {
+    display: none;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    display: none;
+  }
 }
-#main-seat-right {
-    position: absolute;
-    bottom: 0;
-    right: 14%;
-    width: 22%;
-    height: auto;
-    transform-origin: center right;
-    pointer-events: none;
 
+#main-seat-right {
+  position: absolute;
+  bottom: 0;
+  right: 1vw;
+  width: auto;
+  height: 21vh;
+  transform-origin: center right;
+  pointer-events: none;
+  @media (min-aspect-ratio: 81/64) {
+    right: 12vw;
+    width: 21vw;
+    height: auto;
+  }
+  @media (min-aspect-ratio: 2/1) {
+    display: none;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    display: none;
+  }
 }
 
 #main-right-panel {
-    position: absolute;
-    top:9%;
-    right: 0;
-    width: 30%;
+  position: absolute;
+  top: 9vh;
+  right: 0;
+  width: 28vw;
+  height: auto;
+  transform-origin: center right;
+  max-height: 100vh;
+  @media (min-aspect-ratio: 2/1) {
+    width: 31vw;
+    top:1vh;
+  }
+  @media (min-aspect-ratio: 3/1) { 
+    width: auto;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    width: 115vw;
     height: auto;
-    transform-origin: center right;
+    position: static;
+    margin-left: -15vw;
+  }
 }
 
 #main-left-panel {
-    position: absolute;
-    top:9%;
-    left: 0;
-    width: 30%;
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  width: 28vw;
+  height: auto;
+  transform-origin: center left;
+  max-height: 100vh;
+  @media (min-aspect-ratio: 2/1) { 
+    width: 31vw;
+    top:1vh;
+  }
+  @media (min-aspect-ratio: 3/1) { 
+    width: auto;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    width: 115vw;
     height: auto;
-    transform-origin: center left;
+    position: static;
+    margin-top: -5em;
+    margin-bottom: 1em;
+  }
 }
+
+.left-link {
+  cursor: pointer;
+  transform: translate(0, -2px);
+  pointer-events: all;
+  display: block;
+  fill: #60dfff;
+  stroke: #2a234503;
+  stroke-width: 5px;
+  transition: ease 100ms all;
+  &:hover {
+    fill: #f70bc0;
+    transition: ease 100ms all;
+  }
+}
+
+.left-link:hover + .left-link {
+    fill: #f70bc0;
+    transition: ease 100ms all;
+}
+
 #main-ignore-panel {
-    position: absolute;
-    right: 0;
-    bottom: 13%;
-    width: 55%;
+  bottom: 20vh;
+  height: 21vh;
+  left: 0;
+  max-height: 20vh;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  transform-origin: center center;
+  width: 100%;
+  @media (min-aspect-ratio: 81/64) {
+    bottom: 13vh;
+    height: 18vh;
+  }
+  @media (min-aspect-ratio: 115/63) {
+    bottom: 4vh;
+    height: 21vh;
+  }
+  @media (min-aspect-ratio: 2/1) {
+    display: none;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    width: 100%;
     height: auto;
-    transform-origin: center;
-    pointer-events: none;
-    left: 22.5%;
+    position: static;
+  }
 }
 
 #main-top-awards {
-    position: absolute;
-    top: 0;
-    transform-origin: top center;
-    width: 40%;
-    left: 30%;
-
-    @media (orientation: portrait) {
-        transform: scale(2)
-    }
+  transform-origin: top center;
+  position: absolute;
+  top: 0;  
+  width: 50%;
+  left: 25%;
+  pointer-events: none;
+  height: auto;
+  @media (min-aspect-ratio: 1/1) {
+    height: 13vh;
+  }
+  @media (min-aspect-ratio: 2/1) {
+    display: none;
+  }
+  @media (max-aspect-ratio: 64/85) {
+    width: 100%;
+    height: auto;
+    position: static;
+  } 
 }
 
 
 #main-foreground-bg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: 20%;
-    background: rgb(124, 23, 219);
-    background: linear-gradient(180deg, rgba(124, 23, 219, 0) 0%, rgba(39, 0, 123, 1) 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 20%;
+  background: rgb(124, 23, 219);
+  background: linear-gradient(180deg, rgba(124, 23, 219, 0) 0%, rgba(39, 0, 123, 1) 100%);
+  pointer-events: none;
 }
 
 #main-logos {
-    position: absolute;
-    bottom: 0;
-    transform-origin: bottom center;
-
-    @media (orientation: portrait) {
-        transform: scale(2)
-    }
+  position: absolute;
+  bottom: 0;
+  transform-origin: bottom center;
+  width: 100%;
+  height: auto;
+  left: 0;
+  @media (min-aspect-ratio: 1/1) {
+    height: 21vh;
+  }
+  @media (min-aspect-ratio: 2/1) {
+    height: 27vh;
+  }
   .click {
     fill: "#b706c2";
     opacity: 0.01;
@@ -145,6 +338,13 @@ p {
   .logo {
     cursor: pointer;
   }
+  @media (max-aspect-ratio: 64/85) {
+    width: 160vw;
+    height: auto;
+    position: static;
+    margin-left: -30vw;
+    margin-top: 2em;
+  }  
 }
 
 
@@ -155,25 +355,28 @@ p {
 }
 
 .current {
-    display: none;
-    cursor: pointer;
-    > path[fill*="white"] {
-      opacity: .9;
-      transition: 100ms ease all;
+  display: none;
+  cursor: pointer;
+
+  >path[fill*="white"] {
+    opacity: .9;
+    transition: 100ms ease all;
+  }
+
+  &:hover {
+    >path[fill*="white"] {
+      opacity: 1;
+      transition: 100ms ease opacity;
+      fill: #fff8a9;
     }
-    &:hover {
-      > path[fill*="white"] {
-        opacity: 1;
-        transition: 100ms ease opacity;
-        fill: #fff8a9;
-      }
-    }
+  }
 }
 
 .past {
-    display: block;
-    cursor: pointer;
+  display: block;
+  cursor: pointer;
 }
+
 .upcoming {
   display: none;
   cursor: default;
@@ -182,323 +385,1018 @@ p {
 
 .day-25 {
   #planet-25 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
 }
 
 .day-24 {
-  .upcoming { display: block; }
-  #planet-24 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+  .upcoming {
+    display: block;
   }
+
+  #planet-24 {
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
+  }
+
   #planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-23 {
   #planet-23 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-22 {
   #planet-22 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-21 {
   #planet-21 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-20 {
   #planet-20 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-19 {
   #planet-19 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-18 {
   #planet-18 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-17 {
   #planet-17 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-16 {
   #planet-16 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-15 {
   #planet-15 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-14 {
   #planet-14 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-13 {
   #planet-13 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-12 {
   #planet-12 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-11 {
   #planet-11 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-10 {
   #planet-10 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-09 {
   #planet-09 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-08 {
   #planet-08 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-07 {
   #planet-07 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-06 {
   #planet-06 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-07,#planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-07,
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-05 {
   #planet-05 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-06,#planet-07,#planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-06,
+  #planet-07,
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-04 {
   #planet-04 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-05,#planet-06,#planet-07,#planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-05,
+  #planet-06,
+  #planet-07,
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-03 {
   #planet-03 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-04,#planet-05,#planet-06,#planet-07,#planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-04,
+  #planet-05,
+  #planet-06,
+  #planet-07,
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-02 {
   #planet-02 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-03,#planet-04,#planet-05,#planet-06,#planet-07,#planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
+
+  #planet-03,
+  #planet-04,
+  #planet-05,
+  #planet-06,
+  #planet-07,
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
   }
 }
 
 .day-01 {
   #planet-01 {
-    .current {     display: block;    }
-    .past {        display: none;    }
-    .upcoming { display: none }
+    .current {
+      display: block;
+    }
+
+    .past {
+      display: none;
+    }
+
+    .upcoming {
+      display: none
+    }
   }
-  #planet-02, #planet-03,#planet-04,#planet-05,#planet-06,#planet-07,#planet-08,#planet-09,#planet-10,#planet-11,#planet-12,#planet-13,#planet-14,#planet-15,#planet-16,#planet-17,#planet-18,#planet-19,#planet-20,#planet-21,#planet-22,#planet-23,#planet-24,#planet-25 {
-    .past { display: none;}
-    .current { display: none;}
-    .upcoming { display: block; }
-  }  
+
+  #planet-02,
+  #planet-03,
+  #planet-04,
+  #planet-05,
+  #planet-06,
+  #planet-07,
+  #planet-08,
+  #planet-09,
+  #planet-10,
+  #planet-11,
+  #planet-12,
+  #planet-13,
+  #planet-14,
+  #planet-15,
+  #planet-16,
+  #planet-17,
+  #planet-18,
+  #planet-19,
+  #planet-20,
+  #planet-21,
+  #planet-22,
+  #planet-23,
+  #planet-24,
+  #planet-25 {
+    .past {
+      display: none;
+    }
+
+    .current {
+      display: none;
+    }
+
+    .upcoming {
+      display: block;
+    }
+  }
 }
 
 #planet-01 {
@@ -506,18 +1404,113 @@ p {
 }
 
 
-.upcoming { display: block; }
+.upcoming {
+  display: block;
+}
 
 
-#logo-ledger {  cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-trezor {  cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-coingecko { cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-gridplus {  cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-ens { cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-polygon { cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-poap {  cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-mm {  cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
-#logo-new { cursor: pointer;transition: 100ms ease opacity; &:hover { opacity: .9; transition: 100ms ease opacity; }}
+#logo-ledger {
+  cursor: pointer;
+  transition: 100ms ease opacity;
 
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-trezor {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-coingecko {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-gridplus {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-ens {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-polygon {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-poap {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-mm {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+#logo-new {
+  cursor: pointer;
+  transition: 100ms ease opacity;
+
+  &:hover {
+    opacity: .9;
+    transition: 100ms ease opacity;
+  }
+}
+
+.logo-mobile {
+  margin: auto;
+  display: none;
+  @media (max-aspect-ratio: 64/85) {
+    display: block;
+    margin-bottom: 2.5em;
+  }
+}
+
+.mobile-clip {
+  width: 100vw;
+  overflow-x: clip;
+}
 
 @import "modal.scss";
