@@ -65,7 +65,8 @@ body {
   height: 100vh;
   font-family: 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
   font-weight: normal;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   @media (max-aspect-ratio: 64/85) {
     background-image: none;
   }
@@ -74,7 +75,8 @@ body {
 .mobile-clip {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   @media (max-aspect-ratio: 64/85) {
     background: radial-gradient(251.71% 60% at 54.85% -1.1%, #AD00B0 0%, #3700AB 100%);
     padding-top: 2.5em;
@@ -156,9 +158,8 @@ p {
   pointer-events: none;
   @media (min-aspect-ratio: 81/64) {
     left: 14vw;
-    width: 21vw;
+    width: 18vw;
     height: auto;
-    bottom: -3vw;
   }
   @media (min-aspect-ratio: 2/1) {
     display: none;
@@ -1504,13 +1505,10 @@ p {
   display: none;
   @media (max-aspect-ratio: 64/85) {
     display: block;
-    margin-bottom: 2.5em;
+    margin-bottom: 2em;
+    width: auto;
+    height: 7vh;
   }
-}
-
-.mobile-clip {
-  width: 100vw;
-  overflow-x: clip;
 }
 
 @import "modal.scss";

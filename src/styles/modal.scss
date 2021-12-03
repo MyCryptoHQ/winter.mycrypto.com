@@ -40,25 +40,6 @@
   transform: scale(1.02)
 }
 
-.modal-dialog-scrollable {
-  display: flex;
-  max-height: calc(100% - 1rem)
-}
-
-.modal-dialog-scrollable .modal-content {
-  max-height: 100vh;
-  overflow: hidden
-}
-
-.modal-dialog-scrollable .modal-footer,
-.modal-dialog-scrollable .modal-header {
-  flex-shrink: 0
-}
-
-.modal-dialog-scrollable .modal-body {
-  overflow-y: auto
-}
-
 .modal-dialog-centered {
   display: flex;
   align-items: center;
@@ -127,7 +108,7 @@
 .modal-body {
   position: relative;
   flex: 1 1 auto;
-  padding: 1rem
+  padding: 0;
 }
 
 .modal-scrollbar-measure {
@@ -135,7 +116,7 @@
   top: -9999px;
   width: 50px;
   height: 50px;
-  overflow: scroll
+  overflow: scroll;
 }
 
 @media (min-width:576px) {
@@ -239,7 +220,7 @@
     font-style: normal;
     font-weight: 700;
     font-size: 1.75em;
-    line-height: 1.2;
+    line-height: 1.1;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: #FFC165;
@@ -253,7 +234,7 @@
     font-size: 1.375em;
     line-height: 1.2;
     color: #78E4FF;
-    margin-top: .75em;
+    margin-top: .5em;
     margin-bottom: .25em;
 
   }
@@ -273,7 +254,7 @@
     color: #ffd493;
 
     &:hover {
-      color: #fdc97b;
+      color: #ff655d;
     }
   }
 }
@@ -311,7 +292,7 @@
   @media (max-aspect-ratio: 64/85) {
     cursor: pointer;
     display: block;
-    max-height: 5.5em;
+    max-height: 5em;
     height: auto;
     position: relative;
     width: 34vw;
@@ -325,7 +306,7 @@
   @media (max-aspect-ratio: 64/85) {
     cursor: pointer;
     display: block;
-    max-height: 6em;
+    max-height: 5.5em;
     height: auto;
     position: relative;
     width: 50vw;
@@ -335,11 +316,13 @@
 
 .modal-dialog-centered #logo-mobile {
   display: none;
-
+    height: 7vh;
+    width: auto;
   @media (max-aspect-ratio: 64/85) {
     z-index: 9999;
     position: relative;
     display: block;
     margin-top: 2.5em;
+    margin-bottom: 0;
   }
 }
