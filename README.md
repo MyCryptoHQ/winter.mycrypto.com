@@ -1,2 +1,0 @@
-# winter.mycrypto.com
-#MyCryptoWinter
