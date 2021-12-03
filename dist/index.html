@@ -35,7 +35,7 @@ if (day == '02') { twitterUrl = 'https://twitter.com/intent/tweet?text=Is%20your
 if (day == '03') { twitterUrl = 'https://twitter.com/intent/tweet?text=Don%E2%80%99t%20become%20a%20victim%20of%20FOMO.%20%0A%0AIf%20something%20triggers%20your%20emotions%20to%20act%20quickly%2C%20stop.%20Audit%20your%20feelings%20and%20make%20sure%20you%E2%80%99re%20doing%20the%20right%20thing!%0A%0AThank%20you%20%40Trezor%20for%20providing%20this%20%23MyCryptoWinterTip.%20Join%20the%20mission%20and%20win%20prizes%20at%20https%3A%2F%2Fbit.ly%2FMyCryptoWinter2021!%20%F0%9F%9A%80'; }
 }
 </script>
-<link href="styles.4a3648a2323c3f5585f3.css" rel="stylesheet"></head>
+<link href="styles.94de7d0a927ee6f2c308.css" rel="stylesheet"></head>
 <body class="day-02">
 <section class="mobile-clip">
 <img class="logo-mobile" width="256" height="62" src="c459f75f1abb81628d1984f9cabc4c0c.svg" />
@@ -1319,11 +1319,13 @@ document.getElementById('modal').style.display = 'block'
 document.getElementById('modal').classList.add('show')
 document.getElementById('modal-content-' + day).style.display = 'block'
 document.getElementById('mobile-modal-share').style.display = 'block'
+document.body.style.overflowY = "hidden";
 setTwitterUrl(day)
 window.location.hash = '#' + day
 }
 }
 function closeModal() {
+document.body.style.overflowY = "auto";
 document.getElementById('backdrop').style.display = 'none'
 document.getElementById('modal').style.display = 'none'
 document.getElementById('modal').classList.remove('show')
@@ -1354,6 +1356,6 @@ closeModal()
 }
 }
 </script>
-<script type="text/javascript" src="main.0f81099412a00756b944.js"></script></body>
+<script type="text/javascript" src="main.5e3d407885207a072075.js"></script></body>
 
 </html>

@@ -1319,11 +1319,13 @@ document.getElementById('modal').style.display = 'block'
 document.getElementById('modal').classList.add('show')
 document.getElementById('modal-content-' + day).style.display = 'block'
 document.getElementById('mobile-modal-share').style.display = 'block'
+document.body.style.overflowY = "hidden";
 setTwitterUrl(day)
 window.location.hash = '#' + day
 }
 }
 function closeModal() {
+document.body.style.overflowY = "auto";
 document.getElementById('backdrop').style.display = 'none'
 document.getElementById('modal').style.display = 'none'
 document.getElementById('modal').classList.remove('show')
