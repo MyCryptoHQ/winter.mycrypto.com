@@ -6,7 +6,7 @@
   cursor: pointer;
   display: none;
 
-  @media (max-aspect-ratio: 64/85), (max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     cursor: pointer;
     display: block;
     max-height: 4.5em;
@@ -20,7 +20,7 @@
 #mobile-modal-share {
   display: none;
 
-  @media (max-aspect-ratio: 64/85), (max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     cursor: pointer;
     display: block;
     max-height: 5.5em;
@@ -33,7 +33,7 @@
 
 #modal-actions {
   display: none;
-  @media (max-aspect-ratio: 64/85), (max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -240,7 +240,7 @@
   height: 7vh;
   width: auto;
 
-  @media (max-aspect-ratio: 64/85), (max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     z-index: 9999;
     position: relative;
     display: block;
@@ -295,5 +295,21 @@
 
   .modal-sm {
     max-width: 300px
+  }
+}
+
+#modal-sponsor-trezor {  
+  position: fixed;
+  top: 0;
+  left: 32vw;
+  height: 18vh;
+  width: auto;
+  cursor: pointer;
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
+    position: static;
+    width: auto;
+    height: auto;
+    max-height: 11vh;
+    max-width: 50vw;
   }
 }

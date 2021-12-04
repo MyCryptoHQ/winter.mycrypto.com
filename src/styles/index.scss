@@ -67,7 +67,7 @@ body {
   font-weight: normal;
   overflow-x: hidden;
   overflow-y: auto;
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     background-image: none;
   }
 }
@@ -77,7 +77,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     background: radial-gradient(251.71% 60% at 54.85% -1.1%, #AD00B0 0%, #3700AB 100%);
     padding-top: 1em;
     padding-bottom: 2.5em;
@@ -95,7 +95,7 @@ p {
   transform-origin: top left;
   width: 100%;
   height: auto;
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display:none;
   }  
 }
@@ -107,7 +107,7 @@ p {
   transform-origin: top right;
   width: 100%;
   height: auto;
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display:none;
   }  
 }
@@ -120,7 +120,7 @@ p {
   bottom: 0;
   height: 100%;
   width: 100%;
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display:none;
   }
 }
@@ -140,7 +140,7 @@ p {
   @media (min-aspect-ratio: 2/1) {
     top: 0;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     width: 110vw;
     height: auto;
     position: static;
@@ -164,7 +164,7 @@ p {
   @media (min-aspect-ratio: 2/1) {
     display: none;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display: none;
   }
 }
@@ -185,7 +185,7 @@ p {
   @media (min-aspect-ratio: 2/1) {
     display: none;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display: none;
   }
 }
@@ -205,7 +205,7 @@ p {
   @media (min-aspect-ratio: 3/1) { 
     width: auto;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     width: 115vw;
     height: auto;
     position: static;
@@ -228,7 +228,7 @@ p {
   @media (min-aspect-ratio: 3/1) { 
     width: auto;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     width: 115vw;
     height: auto;
     position: static;
@@ -278,7 +278,7 @@ p {
   @media (min-aspect-ratio: 2/1) {
     display: none;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     width: 100%;
     height: auto;
     position: static;
@@ -299,7 +299,7 @@ p {
   @media (min-aspect-ratio: 2/1) {
     display: none;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     width: 100%;
     height: auto;
     position: static;
@@ -339,7 +339,7 @@ p {
   .logo {
     cursor: pointer;
   }
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     width: 160vw;
     height: auto;
     position: static;
@@ -1503,10 +1503,12 @@ p {
 .logo-mobile {
   margin: 0 auto 1em auto;
   display: none;
-  @media (max-aspect-ratio: 64/85),(max-width: 400px) {
+  @media (max-aspect-ratio: 64/85), (max-width: 501px) {
     display: block;
     width: auto;
-    height: 7vh;
+    height: auto;
+    max-height: 7vh;
+    max-width: 50vw;
   }
 }
 
