@@ -54,7 +54,7 @@ if (day == '20') { twitterUrl = 'https://twitter.com/intent/tweet?text=Don%E2%80
 </script>
 <link href="styles.5f78e5dbe4a94c244ebf.css" rel="stylesheet"></head>
 
-<body class="day-16">
+<body class="day-17">
 <section class="mobile-clip">
   <img class="logo-mobile" width="256" height="62" src="c459f75f1abb81628d1984f9cabc4c0c.svg" />
   <img id="top-left-thing" width="1920" height="162" src="ff45ca263680f5de15e1902da391ed08.svg" />
@@ -3057,7 +3057,45 @@ if (day == '20') { twitterUrl = 'https://twitter.com/intent/tweet?text=Don%E2%80
           <li>If it&rsquo;s a verified collection, make sure the check mark is in the right position. Some fake collections will cleverly put the check mark in their profile picture to look legitimate.</li>
           </ul>
         </div>
-      </div>                             
+      </div> 
+      <div class="modal-content" id="modal-content-18" style="display:none">
+        <div class="modal-body">
+        <h2>December 18</h2>
+        <h1>Revoking vs Disconnecting Wallets</h1>
+        <p>There has been an influx of users who claim to 'disconnect' their MetaMask from dapps after using them, because <a href="https://twitter.com/MyCrypto/status/1469384967973003271">they think that disconnecting their wallet makes bad actors unable to access their funds</a>. <strong>This is utterly and disappointingly incorrect.</strong></p>
+        <p><strong>When you connect MetaMask to a dapp</strong>, it's giving that <strong>dapp read-only access</strong> to view your account(s). Disconnecting your MetaMask from that dapp merely removes the read-only access and nothing else.</p>
+        <p><strong>When you approve a smart contract on a dapp</strong>, that gives the dapp the <strong>ability to access tokens</strong> according to what you approved. <strong>This is where funds can be stolen</strong>, and the only way to avoid this is to 'disconnect' aka revoke the actual smart contracts.</p>
+        <p>Don't get it mixed up - having a false sense of security is a quick way to lose funds.</p>
+        <p><em>PS: It's a healthy habit to disconnect your hardware wallet from your computer when you're done using it, but that doesn't change any of the above either. See Day 16 for more on revoking.</em></p>
+        </div>
+      </div>
+      <div class="modal-content" id="modal-content-19" style="display:none">
+        <div class="modal-body">
+        <h2>December 19</h2>
+        <h1>Don’t Let Them Hijack Your Phone</h1>
+        <p>Someone somehow got access to all of your accounts, locked you out of everything, and started stealing your crypto. How has this happened?! <a href="https://blog.mycrypto.com/the-sim-swapping-bible-what-to-do-when-sim-swapping-happens-to-you?utm_medium=organic&amp;utm_source=mcw2021&amp;utm_campaign=day19">There's a large chance it's a SIM swap</a> - an attack where a bad actor uses social engineering to transfer your phone number to a phone they have with them.</p>
+        <p><strong>Prevent a SIM-swap by:</strong></p>
+        <ul>
+        <li>Asking your cell phone provider to put an additional PIN on your account.</li>
+        <li>Using a <a href="https://voice.google.com/">Google Voice</a> number for SMS verification for websites and services that insist on using SMS 2FA or otherwise require a phone number.&nbsp;</li>
+        <li>Securing your email accounts. This is the primary thing a bad actor wants access to after they've gotten control of your phone number, and the email often leads to everything else.</li>
+        <li>Reviewing your recovery options and backup emails. Make sure there are zero loose ends.</li>
+        </ul>
+        <p>Above all else, one of the most important things you can do is to <strong>NEVER ever use text message (SMS) for 2FA</strong> - if you do, those text messages with codes will be sent directly to the bad actor after they've gotten a hold of your phone number.</p>
+        </div>
+      </div>
+      <div class="modal-content" id="modal-content-20" style="display:none">
+        <div class="modal-body">
+        <h2>December 20</h2>
+        <h1>Get A Password Manager</h1>
+        <p>Don't be that person that uses the same password (or a form of it) for every account.</p>
+        <p>Don't be that person that has sticky notes all over the place with various passwords on it.</p>
+        <p>Don't be that person that uses account recovery once a week because they lost a password.</p>
+        <p>Be a person that uses a password manager. It does the hard work for you - it helps you safely create and store unique and strong passwords for everything.</p>
+        <p>Some great common options are <a href="https://www.lastpass.com/">LastPass</a> and <a href="https://1password.com/">1Password</a>!</p>
+        <p>Some lesser-known but great open source options are <a href="https://keepass.info/">KeePass</a> and <a href="https://bitwarden.com/">Bitwarden</a>!</p>
+        </div>
+      </div>
       <section id="modal-actions">
         <img id="mobile-close-button" onclick="closeModal()" width="180" height="183" src="9ca06970ac79b70d99e7668401a8bef1.svg" />
         <img id="mobile-modal-share" onclick="goToTwitter()" width="216" height="110" src="ea22bdd9cb159c2223c0f33a03b5ed71.svg" />
