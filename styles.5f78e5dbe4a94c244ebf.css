@@ -740,187 +740,78 @@ p {
 }
 
 
-.day-15 #planet-15 .past,
-.day-15 #planet-15 .current,
-.day-15 #planet-16 .current,
-.day-15 #planet-16 .past,
-.day-15 #planet-17 .current,
-.day-15 #planet-17 .past,
-.day-15 #planet-18 .current,
-.day-15 #planet-18 .past,
-.day-15 #planet-19 .current,
-.day-15 #planet-19 .past,
-.day-15 #planet-20 .current,
-.day-15 #planet-20 .past,
-.day-15 #planet-21 .current,
-.day-15 #planet-21 .past,
-.day-15 #planet-22 .current,
-.day-15 #planet-22 .past,
-.day-15 #planet-23 .current,
-.day-15 #planet-23 .past,
-.day-15 #planet-24 .current,
-.day-15 #planet-24 .past,
-.day-15 #planet-25 .current,
-.day-15 #planet-25 .past {
+
+.day-21 #planet-21 .past,
+.day-21 #planet-22 .current,
+.day-21 #planet-22 .past,
+.day-21 #planet-23 .current,
+.day-21 #planet-23 .past,
+.day-21 #planet-24 .current,
+.day-21 #planet-24 .past,
+.day-21 #planet-25 .current,
+.day-21 #planet-25 .past {
   display: none
 }
 
-.day-15 #planet-15 .current,
-.day-15 #planet-16 .upcoming,
-.day-15 #planet-17 .upcoming,
-.day-15 #planet-18 .upcoming,
-.day-15 #planet-19 .upcoming,
-.day-15 #planet-20 .upcoming,
-.day-15 #planet-21 .upcoming,
-.day-15 #planet-22 .upcoming,
-.day-15 #planet-23 .upcoming,
-.day-15 #planet-24 .upcoming,
-.day-15 #planet-25 .upcoming {
+.day-21 #planet-21 .current,
+.day-21 #planet-22 .upcoming,
+.day-21 #planet-23 .upcoming,
+.day-21 #planet-24 .upcoming,
+.day-21 #planet-25 .upcoming {
   display: block
 }
 
-.day-16 #planet-16 .past,
-.day-16 #planet-17 .current,
-.day-16 #planet-17 .past,
-.day-16 #planet-18 .current,
-.day-16 #planet-18 .past,
-.day-16 #planet-19 .current,
-.day-16 #planet-19 .past,
-.day-16 #planet-20 .current,
-.day-16 #planet-20 .past,
-.day-16 #planet-21 .current,
-.day-16 #planet-21 .past,
-.day-16 #planet-22 .current,
-.day-16 #planet-22 .past,
-.day-16 #planet-23 .current,
-.day-16 #planet-23 .past,
-.day-16 #planet-24 .current,
-.day-16 #planet-24 .past,
-.day-16 #planet-25 .current,
-.day-16 #planet-25 .past {
+
+.day-22 #planet-22 .past,
+.day-22 #planet-23 .current,
+.day-22 #planet-23 .past,
+.day-22 #planet-24 .current,
+.day-22 #planet-24 .past,
+.day-22 #planet-25 .current,
+.day-22 #planet-25 .past {
   display: none
 }
 
-.day-16 #planet-16 .current,
-.day-16 #planet-17 .upcoming,
-.day-16 #planet-18 .upcoming,
-.day-16 #planet-19 .upcoming,
-.day-16 #planet-20 .upcoming,
-.day-16 #planet-21 .upcoming,
-.day-16 #planet-22 .upcoming,
-.day-16 #planet-23 .upcoming,
-.day-16 #planet-24 .upcoming,
-.day-16 #planet-25 .upcoming {
+.day-22 #planet-22 .current,
+.day-22 #planet-23 .upcoming,
+.day-22 #planet-24 .upcoming,
+.day-22 #planet-25 .upcoming {
   display: block
 }
 
-.day-17 #planet-17 .past,
-.day-17 #planet-18 .current,
-.day-17 #planet-18 .past,
-.day-17 #planet-19 .current,
-.day-17 #planet-19 .past,
-.day-17 #planet-20 .current,
-.day-17 #planet-20 .past,
-.day-17 #planet-21 .current,
-.day-17 #planet-21 .past,
-.day-17 #planet-22 .current,
-.day-17 #planet-22 .past,
-.day-17 #planet-23 .current,
-.day-17 #planet-23 .past,
-.day-17 #planet-24 .current,
-.day-17 #planet-24 .past,
-.day-17 #planet-25 .current,
-.day-17 #planet-25 .past {
+
+.day-23 #planet-23 .past,
+.day-23 #planet-24 .current,
+.day-23 #planet-24 .past,
+.day-23 #planet-25 .current,
+.day-23 #planet-25 .past {
   display: none
 }
 
-.day-17 #planet-17 .current,
-.day-17 #planet-18 .upcoming,
-.day-17 #planet-19 .upcoming,
-.day-17 #planet-20 .upcoming,
-.day-17 #planet-21 .upcoming,
-.day-17 #planet-22 .upcoming,
-.day-17 #planet-23 .upcoming,
-.day-17 #planet-24 .upcoming,
-.day-17 #planet-25 .upcoming {
+.day-23 #planet-23 .current,
+.day-23 #planet-24 .upcoming,
+.day-23 #planet-25 .upcoming {
   display: block
 }
 
-.day-18 #planet-18 .past,
-.day-18 #planet-19 .current,
-.day-18 #planet-19 .past,
-.day-18 #planet-20 .current,
-.day-18 #planet-20 .past,
-.day-18 #planet-21 .current,
-.day-18 #planet-21 .past,
-.day-18 #planet-22 .current,
-.day-18 #planet-22 .past,
-.day-18 #planet-23 .current,
-.day-18 #planet-23 .past,
-.day-18 #planet-24 .current,
-.day-18 #planet-24 .past,
-.day-18 #planet-25 .current,
-.day-18 #planet-25 .past {
+
+
+.day-24 #planet-24 .past,
+.day-24 #planet-25 .current,
+.day-24 #planet-25 .past {
   display: none
 }
 
-.day-18 #planet-18 .current,
-.day-18 #planet-19 .upcoming,
-.day-18 #planet-20 .upcoming,
-.day-18 #planet-21 .upcoming,
-.day-18 #planet-22 .upcoming,
-.day-18 #planet-23 .upcoming,
-.day-18 #planet-24 .upcoming,
-.day-18 #planet-25 .upcoming {
+.day-24 #planet-24 .current,
+.day-24 #planet-25 .upcoming {
   display: block
 }
 
-.day-19 #planet-19 .past,
-.day-19 #planet-20 .current,
-.day-19 #planet-20 .past,
-.day-19 #planet-21 .current,
-.day-19 #planet-21 .past,
-.day-19 #planet-22 .current,
-.day-19 #planet-22 .past,
-.day-19 #planet-23 .current,
-.day-19 #planet-23 .past,
-.day-19 #planet-24 .current,
-.day-19 #planet-24 .past,
-.day-19 #planet-25 .current,
-.day-19 #planet-25 .past {
+.day-25 #planet-25 .past {
   display: none
 }
 
-.day-19 #planet-19 .current,
-.day-19 #planet-20 .upcoming,
-.day-19 #planet-21 .upcoming,
-.day-19 #planet-22 .upcoming,
-.day-19 #planet-23 .upcoming,
-.day-19 #planet-24 .upcoming,
-.day-19 #planet-25 .upcoming {
-  display: block
-}
-
-.day-20 #planet-20 .past,
-.day-20 #planet-21 .current,
-.day-20 #planet-21 .past,
-.day-20 #planet-22 .current,
-.day-20 #planet-22 .past,
-.day-20 #planet-23 .current,
-.day-20 #planet-23 .past,
-.day-20 #planet-24 .current,
-.day-20 #planet-24 .past,
-.day-20 #planet-25 .current,
-.day-20 #planet-25 .past {
-  display: none
-}
-
-.day-20 #planet-20 .current,
-.day-20 #planet-21 .upcoming,
-.day-20 #planet-22 .upcoming,
-.day-20 #planet-23 .upcoming,
-.day-20 #planet-24 .upcoming,
-.day-20 #planet-25 .upcoming {
+.day-25 #planet-25 .current {
   display: block
 }
 
